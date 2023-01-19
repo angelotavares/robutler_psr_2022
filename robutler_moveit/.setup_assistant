@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: robutler_description
+    relative_path: urdf/robutler.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/turtlebot3_waffle_pi.srdf
+  CONFIG:
+    author_name: dslçfk
+    author_email: dsfsd@sadfjk.adsd
+    generated_timestamp: 1674060117

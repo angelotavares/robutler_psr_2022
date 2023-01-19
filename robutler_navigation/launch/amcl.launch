@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="amcl" type="amcl" name="amcl">
+
+    <rosparam file="$(find robutler_navigation)/params/acml.yaml" command="load"/>
+  </node>
+
+</launch>
