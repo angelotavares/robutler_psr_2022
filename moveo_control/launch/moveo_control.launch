@@ -1,0 +1,16 @@
+<launch>
+
+  <param name="robot_description" textfile="$(find moveo_urdf)/urdf/moveo_urdf.urdf" />
+
+
+  <!-- convert joint states to TF transforms for rviz, etc --> 
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+
+  </node> 
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <rosparam param="source_list">[/moveo_urdf/joint_states]</rosparam>
+  </node>
+
+</launch>
