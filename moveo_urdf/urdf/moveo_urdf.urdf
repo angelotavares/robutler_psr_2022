@@ -561,7 +561,7 @@
         <parent link="Gripper_Idol_Gear" />
         <child link="Tip_Gripper_Idol" />
         <axis xyz="0 1 0" />
-        <limit lower="3.14" upper="-3.14" effort="100" velocity="0.5" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="0.5" />
         <mimic joint="Gripper_Idol_Gear_Joint" multiplier="-1" offset="0" />
     </joint>
 
