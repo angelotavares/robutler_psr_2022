@@ -221,14 +221,14 @@
   <link name="camera_rgb_optical_frame"/>
 
 
-<!-- ...................................................Robot TO MANIPULATOR ................................ 
+<!-- ...................................................Robot TO MANIPULATOR ................................ -->
 
 
 
   <link name="base_for_arm">
     <visual>
       <geometry>
-        <cylinder radius="0.15" length="0.04"/>
+        <cylinder radius="0.1" length="0.04"/>
       </geometry>
       <material name="black">
         <color rgba="1 0 0 1"/>
@@ -236,13 +236,13 @@
     </visual>
     <collision>
       <geometry>
-        <cylinder radius="0.15" length="0.04"/>
+        <cylinder radius="0.1" length="0.04"/>
       </geometry>
     </collision>
     <inertial>
       <mass value="10.0"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.083333" ixy="0.0" ixz="0.0" iyy="0.083333" iyz="0.0" izz="0.166667"/>
+      <inertia ixx="0.043333" ixy="0.0" ixz="0.0" iyy="0.023333" iyz="0.0" izz="0.086667"/>
     </inertial>
   </link>
   <link name="cylinder">
@@ -276,7 +276,7 @@
 
         <parent link="base_scan" />
         <child link="base_for_arm" />
-    </joint>-->
+    </joint>
 
 <!-- ...................................................MANIPULATOR ................................ -->
 
@@ -287,7 +287,7 @@
 	<origin xyz="0 0 0.1" rpy="0 0 0" />
         <axis xyz="0 0 1" />
         <limit lower="-1.5707963268" upper="1.5707963268" effort="100" velocity="1.919862177191" />
-        <parent link="base_scan" />
+        <parent link="cylinder" />
         <child link="Link_1" />
     </joint>
   
@@ -622,6 +622,7 @@
 
     </link>
 
+
     <joint name="Pivot_Arm_Gripper_Idol_Joint" type="revolute">
         <origin xyz="0.005 0 0.085" rpy="0 0 0" />
         <parent link="Link_5" />
@@ -631,6 +632,38 @@
         <mimic joint="Gripper_Idol_Gear_Joint" multiplier="1" offset="0" />
     </joint>
 
-  
+
+  <!-- ________________________________NEW CAMERA Configuration _________________________________________________-->
+
+  <joint name="camera_joint_arm" type="fixed">
+    <!-- <origin xyz="0.073 -0.011 0.084" rpy="0 0 0"/> -->
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="Link_5"/>
+    <child link="camera_link_arm"/>
+  </joint>
+
+  <link name="camera_link_arm">
+    <collision>
+      <origin xyz="0.005 0.011 0.013" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_rgb_joint_arm" type="fixed">
+    <origin xyz="0 0 0.1" rpy="0 -1.57 -1.57"/>
+    <parent link="camera_link_arm"/>
+    <child link="camera_rgb_frame_arm"/>
+  </joint>
+  <link name="camera_rgb_frame_arm"/>
+
+  <joint name="camera_rgb_optical_joint_arm" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="camera_rgb_frame_arm"/>
+    <child link="camera_rgb_optical_frame_arm"/>
+  </joint>
+  <link name="camera_rgb_optical_frame_arm"/>
+
 
 </robot>
