@@ -1,0 +1,28 @@
+digraph G {
+"base_footprint" -> "base_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_footprint"[label=" Broadcaster: /gazebo\nAverage rate: 30.205\nBuffer length: 4.966\nMost recent transform: 6242.969\nOldest transform: 6238.003\n"];
+"base_link" -> "camera_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_rgb_frame"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_rgb_frame" -> "camera_rgb_optical_frame"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "caster_back_left_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "caster_back_right_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "imu_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "base_scan"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "wheel_left_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 30.205\nBuffer length: 4.966\nMost recent transform: 6242.97\nOldest transform: 6238.004\n"];
+"base_link" -> "wheel_right_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 30.205\nBuffer length: 4.966\nMost recent transform: 6242.97\nOldest transform: 6238.004\n"];
+"Link_5" -> "Gripper_Idol_Gear"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_4" -> "Link_5"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_5" -> "Gripper_Servo_Gear"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"base_scan" -> "Link_1"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_1" -> "Link_2"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_2" -> "Link_3"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_3" -> "Link_4"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_5" -> "Pivot_Arm_Gripper_Idol"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Link_5" -> "Pivot_Arm_Gripper_Servo"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Gripper_Idol_Gear" -> "Tip_Gripper_Idol"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+"Gripper_Servo_Gear" -> "Tip_Gripper_Servo"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10.204\nBuffer length: 4.9\nMost recent transform: 6242.918\nOldest transform: 6238.018\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 6243.0"[ shape=plaintext ] ;
+}->"odom";
+}

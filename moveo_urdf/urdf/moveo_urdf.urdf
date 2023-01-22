@@ -284,7 +284,7 @@
  
 
     <joint name="Joint_1" type="revolute">
-	<origin xyz="0 0 0.1" rpy="0 0 0" />
+	<origin xyz="0 0 0.3" rpy="0 0 0" />
         <axis xyz="0 0 1" />
         <limit lower="-1.5707963268" upper="1.5707963268" effort="100" velocity="1.919862177191" />
         <parent link="base_scan" />
@@ -561,7 +561,7 @@
         <parent link="Gripper_Idol_Gear" />
         <child link="Tip_Gripper_Idol" />
         <axis xyz="0 1 0" />
-        <limit lower="3.14" upper="-3.14" effort="100" velocity="0.5" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="0.5" />
         <mimic joint="Gripper_Idol_Gear_Joint" multiplier="-1" offset="0" />
     </joint>
 
