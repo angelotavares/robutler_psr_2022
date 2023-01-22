@@ -631,6 +631,37 @@
         <mimic joint="Gripper_Idol_Gear_Joint" multiplier="1" offset="0" />
     </joint>
 
+
+ <!-- ________________________________NEW CAMERA Configuration _________________________________________________-->
+
+  <joint name="camera_joint_arm" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="Link_5"/>
+    <child link="camera_link_arm"/>
+  </joint>
+
+  <link name="camera_link_arm">
+    <collision>
+      <origin xyz="0.005 0.011 0.013" rpy="0 0 0"/>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_rgb_joint_arm" type="fixed">
+    <origin xyz="0 0 0.1" rpy="0 -1.57 -1.57"/>
+    <parent link="camera_link_arm"/>
+    <child link="camera_rgb_frame_arm"/>
+  </joint>
+  <link name="camera_rgb_frame_arm"/>
+
+  <joint name="camera_rgb_optical_joint_arm" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="camera_rgb_frame_arm"/>
+    <child link="camera_rgb_optical_frame_arm"/>
+  </joint>
+  <link name="camera_rgb_optical_frame_arm"/>
   
 
 </robot>
