@@ -35,7 +35,7 @@ class ObjectDetection:
     def __init__(self, net, ln, colors, classes):
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber(
-            "/camera/rgb/image_raw",
+            "/camera/rgb/image_raw_arm",
             Image,
             self.image_callback,
             queue_size=1,

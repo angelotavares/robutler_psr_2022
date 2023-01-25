@@ -28,6 +28,14 @@
         <joint name="Joint_4" value="0" />
         <joint name="Joint_5" value="0" />
     </group_state>
+
+    <group_state name="Traveling" group="arm">
+        <joint name="Joint_1" value="1.5708" />
+        <joint name="Joint_2" value="1.5708" />
+        <joint name="Joint_3" value="1.5708" />
+        <joint name="Joint_4" value="0" />
+        <joint name="Joint_5" value="-" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand" parent_link="Link_5" group="hand" parent_group="arm" />
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->

@@ -201,7 +201,7 @@
     <collision>
       <origin xyz="0.005 0.011 0.013" rpy="0 0 0"/>
       <geometry>
-        <box size="0.015 0.030 0.027"/>
+        <box size="0.0 0.0 0.0"/>
       </geometry>
     </collision>
   </link>
@@ -240,7 +240,7 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="0.01"/>
+      <mass value="1.0"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <inertia ixx="0.01" ixy="0.0" ixz="0.01" iyy="0.0" iyz="0.0" izz="0.0"/>
     </inertial>
@@ -644,7 +644,7 @@
     <collision>
       <origin xyz="0.005 0.011 0.013" rpy="0 0 0"/>
       <geometry>
-        <box size="0 0 0"/>
+        <box size="0.015 0.030 0.027"/>
       </geometry>
     </collision>
   </link>
