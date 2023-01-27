@@ -4,13 +4,13 @@
 
   <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
   <include file="$(find moveo_moveit_config)/launch/planning_context.launch">
-    <arg name="load_robot_description" value="false"/>
+    <arg name="load_robot_description" value="true"/>
   </include>
 
   <!-- Run the main MoveIt! executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(find moveo_moveit_config)/launch/move_group.launch">
-    <arg name="publish_monitored_planning_scene" value="false" />
+    <arg name="publish_monitored_planning_scene" value="true" />
   </include>
 
-
+  <include file="$(find moveo_moveit_config)/launch/sensor_manager.launch.xml"/>
 </launch>

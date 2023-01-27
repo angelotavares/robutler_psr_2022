@@ -198,6 +198,12 @@
   </joint>
 
   <link name="camera_link">
+    <visual>
+      <origin xyz="0.005 0.011 0.013" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.0 0.0 0.0"/>
+      </geometry>
+    </visual>
     <collision>
       <origin xyz="0.005 0.011 0.013" rpy="0 0 0"/>
       <geometry>

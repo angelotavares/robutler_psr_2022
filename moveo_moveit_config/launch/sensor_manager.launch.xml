@@ -2,11 +2,11 @@
 
   <!-- This file makes it easy to include the settings for sensor managers -->
 
-  <!-- Params for 3D sensors config
+  <!-- Params for 3D sensors config -->
   <rosparam command="load" file="$(find moveo_moveit_config)/config/sensors_3d.yaml" />
- -->
+ 
   <!-- Params for the octomap monitor -->
-  <param name="octomap_frame" type="string" value="base_link" />
+  <param name="octomap_frame" type="string" value="Link_1" />
   <param name="octomap_resolution" type="double" value="0.025" />
   <param name="max_range" type="double" value="5.0" />
 
