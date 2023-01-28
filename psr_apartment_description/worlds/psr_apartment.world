@@ -2170,10 +2170,10 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>5761 135000000</sim_time>
-      <real_time>500 374683734</real_time>
-      <wall_time>1671060998 927161926</wall_time>
-      <iterations>486178</iterations>
+      <sim_time>6092 216000000</sim_time>
+      <real_time>628 34268143</real_time>
+      <wall_time>1674915914 704145797</wall_time>
+      <iterations>331081</iterations>
       <model name='Fridge_Cabinet_33x15_clone_2_clone'>
         <pose>-1.65867 4.6274 -0.000205 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2277,13 +2277,23 @@
         </link>
       </model>
       <model name='KitchenSink'>
-        <pose>-2.90383 -0.037844 -0.00161 -1e-06 -2e-06 -1.57823</pose>
+        <pose>-2.90342 -0.069268 -0.001609 0 1e-06 -1.57367</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.90383 -0.037844 -0.00161 -1e-06 -2e-06 -1.57823</pose>
+          <pose>-2.90342 -0.069268 -0.001609 0 1e-06 -1.57367</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <acceleration>-0.000386 0.003962 -0.670821 2.463 0.239784 -0</acceleration>
+          <wrench>-0.000386 0.003962 -0.670821 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='MaleVisitorSit'>
+        <pose>-3.61087 5.07366 0.067587 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-3.61087 5.07366 0.067587 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Shower'>
@@ -2296,14 +2306,24 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Toilet'>
-        <pose>1.74124 -0.670659 0.00954 0 0.031612 -1.5708</pose>
+      <model name='Suitcase2H'>
+        <pose>0.118157 5.44369 0 0 0 -1.55683</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>1.74124 -0.670659 0.00954 0 0.031612 -1.5708</pose>
+          <pose>0.118157 5.44369 0 0 0 -1.55683</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -0 0 -0 0</acceleration>
-          <wrench>0 0 -0 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Toilet'>
+        <pose>1.74107 -0.703604 0.00991 0.00222 0.031761 -1.57073</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>1.74107 -0.703604 0.00991 0.00222 0.031761 -1.57073</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 0 0 -0 0</acceleration>
+          <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Wall_Cabinet_15x30'>
@@ -2525,10 +2545,10 @@
         </link>
       </model>
       <model name='aws_robomaker_residential_BalconyTable_01'>
-        <pose>-6.89848 -2.18431 -9e-06 7e-06 -1e-06 -7e-06</pose>
+        <pose>-7.04371 -2.19117 -6e-06 2e-06 6e-06 0.106098</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-6.89848 -2.18431 -9e-06 7e-06 -1e-06 -7e-06</pose>
+          <pose>-7.04371 -2.19117 -6e-06 2e-06 6e-06 0.106098</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -147 0 -0 0</wrench>
@@ -2585,23 +2605,23 @@
         </link>
       </model>
       <model name='aws_robomaker_residential_SofaB_01'>
-        <pose>-3.58956 5.22238 -0 0 0 -1.58221</pose>
+        <pose>-3.58836 5.22118 -0 -4e-06 -4e-06 -1.57847</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-3.58956 5.22238 -0 0 0 -1.58221</pose>
+          <pose>-3.58836 5.22118 -0 -4e-06 -4e-06 -1.57847</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 0.000169 0.012758 -0.013872 0</acceleration>
-          <wrench>-0 -0 0.012281 0 -0 0</wrench>
+          <acceleration>0 0 -0.05376 -1.01711 -1.36875 -3.14159</acceleration>
+          <wrench>0 0 -3.8976 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_Sofa_01_0'>
-        <pose>-2.36442 -4.35767 -1.5e-05 1.5e-05 -4.9e-05 1.55729</pose>
+        <pose>-2.36864 -4.37408 -3.6e-05 0.000321 0.000566 1.55277</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.36442 -4.35767 -1.5e-05 1.5e-05 -4.9e-05 1.55729</pose>
-          <velocity>-0.000272 -5.3e-05 0.004932 -0.008217 0.017354 -0.002995</velocity>
-          <acceleration>-0.320412 -0.215704 14.0812 1.81865 -0.707811 2.91101</acceleration>
-          <wrench>-23.2299 -15.6386 1020.89 0 -0 0</wrench>
+          <pose>-2.36864 -4.37408 -3.6e-05 0.000321 0.000566 1.55277</pose>
+          <velocity>-4e-06 0 -0.000428 -0.160641 0.094983 6e-05</velocity>
+          <acceleration>0.000764 0.014893 31.7697 2.12605 -1.01006 -3.04987</acceleration>
+          <wrench>0.055375 1.07971 2303.3 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_TV_02'>
@@ -2615,23 +2635,23 @@
         </link>
       </model>
       <model name='aws_robomaker_residential_Trash_01'>
-        <pose>0.688676 3.0982 0.000904 1e-06 -2e-06 -0</pose>
+        <pose>0.688676 3.0982 0.000904 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.688676 3.0982 0.000904 1e-06 -2e-06 -0</pose>
+          <pose>0.688676 3.0982 0.000904 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.000723 -0.001721 -0.114437 1.90652 -0.802265 1e-06</acceleration>
-          <wrench>-7.2e-05 -0.000172 -0.011444 0 -0 0</wrench>
+          <acceleration>0.000784 -8e-06 -0.005885 0.007222 0.868555 -2.1e-05</acceleration>
+          <wrench>7.8e-05 -1e-06 -0.000589 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_Trash_01_0'>
-        <pose>-2.21058 0.104091 0.000903 0 -3e-06 0</pose>
+        <pose>-2.21058 0.104091 0.000904 0 -1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.21058 0.104091 0.000903 0 -3e-06 0</pose>
+          <pose>-2.21058 0.104091 0.000904 0 -1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -0.98 0 -0 0</wrench>
+          <acceleration>1.8e-05 -4.4e-05 -9.55387 0.048448 0.020505 0</acceleration>
+          <wrench>2e-06 -4e-06 -0.955387 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_Wardrobe_01'>
@@ -2761,11 +2781,11 @@
         </link>
       </model>
       <model name='camera'>
-        <pose>-0.046323 9.86546 -1.22483e+08 0 -0 0</pose>
+        <pose>-0.046323 9.86546 -1.39242e+08 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.046323 9.86546 -1.22483e+08 0 -0 0</pose>
-          <velocity>0 0 -48996.6 0 -0 0</velocity>
+          <pose>-0.046323 9.86546 -1.39242e+08 0 -0 0</pose>
+          <velocity>0 0 -52241.2 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -0.098 0 -0 0</wrench>
         </link>
@@ -3252,122 +3272,210 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='psr_appartment'>
-        <pose>-2.3527 0.022702 0 0 -0 0</pose>
+      <model name='psr_apartment'>
+        <pose>-2.46745 -0.010353 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='Wall_11'>
-          <pose>-2.65708 5.70298 0 0 -0 0</pose>
+          <pose>-2.77183 5.66993 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_13'>
-          <pose>-7.70267 3.94202 0 0 -0 1.5733</pose>
+          <pose>-7.81742 3.90897 0 0 -0 1.5733</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_15'>
-          <pose>-4.12542 3.87569 0 0 -0 1.57535</pose>
+          <pose>-4.24017 3.84264 0 0 -0 1.57535</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_17'>
-          <pose>-1.1369 3.93116 0 0 -0 1.5708</pose>
+          <pose>-1.25165 3.89811 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_19'>
-          <pose>0.140634 0.81337 0 0 0 -1.5708</pose>
+          <pose>0.02589 0.780313 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_2'>
-          <pose>-3.04521 -5.65185 0 0 0 -0.00169</pose>
+          <pose>-3.15996 -5.6849 0 0 0 -0.00169</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_21'>
-          <pose>1.57687 -0.184787 0 0 -0 3.14159</pose>
+          <pose>1.46212 -0.217844 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_24'>
-          <pose>-0.574606 -2.04245 0 0 -0 0</pose>
+          <pose>-0.68935 -2.0755 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_27'>
-          <pose>2.59242 -1.11745 0 0 -0 1.5708</pose>
+          <pose>2.47767 -1.1505 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_29'>
-          <pose>1.17074 -1.12331 0 0 0 -1.5636</pose>
+          <pose>1.05599 -1.15636 0 0 0 -1.5636</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_31'>
-          <pose>-1.05003 -0.527927 0 0 -0 1.5708</pose>
+          <pose>-1.16478 -0.560984 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_34'>
-          <pose>-3.79649 0.402279 0 0 -0 0</pose>
+          <pose>-3.91124 0.369222 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_36'>
-          <pose>-3.8746 -1.74245 0 0 -0 1.5708</pose>
+          <pose>-3.98935 -1.7755 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_39'>
-          <pose>0.023774 -3.8469 0 0 0 -1.5708</pose>
+          <pose>-0.09097 -3.87995 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_4'>
-          <pose>-6.54121 -1.7211 0 0 -0 1.57079</pose>
+          <pose>-6.65596 -1.75415 0 0 -0 1.57079</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_41'>
-          <pose>-7.09125 -5.64595 0 0 -0 3.14159</pose>
+          <pose>-7.206 -5.679 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_42'>
-          <pose>-7.66975 -1.73245 0 0 -0 1.57808</pose>
+          <pose>-7.7845 -1.7655 0 0 -0 1.57808</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_6'>
-          <pose>-2.64806 2.18093 0 0 0 -2.4e-05</pose>
+          <pose>-2.7628 2.14788 0 0 0 -2.4e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_9'>
-          <pose>1.87443 2.76277 0 0 0 -1.5708</pose>
+          <pose>1.75968 2.72972 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='robutler'>
+        <pose>-0.026291 4.04504 -0.001087 0 0.003664 0.153015</pose>
+        <scale>1 1 1</scale>
+        <link name='Gripper_Idol_Gear'>
+          <pose>0.243461 3.83 0.428453 1.85175 -0.832216 -1.10402</pose>
+          <velocity>0.006893 -0.0366 0.027872 -0.171984 -0.070895 0.019022</velocity>
+          <acceleration>-0.033317 -0.012568 0.002543 0.055247 0.022319 0.068413</acceleration>
+          <wrench>-0.000333 -0.000126 2.5e-05 0 -0 0</wrench>
+        </link>
+        <link name='Gripper_Servo_Gear'>
+          <pose>0.255092 3.81971 0.446756 2.15011 0.687307 -3.07281</pose>
+          <velocity>0.003995 -0.035244 0.030475 -0.300287 0.044366 0.165333</velocity>
+          <acceleration>-0.033507 -0.013393 0.001266 0.025696 0.060312 0.058869</acceleration>
+          <wrench>-0.000335 -0.000134 1.3e-05 0 -0 0</wrench>
+        </link>
+        <link name='Link_1'>
+          <pose>-0.088087 4.03551 0.401144 0.002334 0.002825 0.843541</pose>
+          <velocity>-3.3e-05 2.5e-05 5.1e-05 -0.000237 -0.00012 -0.059426</velocity>
+          <acceleration>3.9e-05 0.000315 -8.2e-05 -0.000862 -5.1e-05 -0.074511</acceleration>
+          <wrench>0 3e-06 -1e-06 0 -0 0</wrench>
+        </link>
+        <link name='Link_2'>
+          <pose>-0.087425 4.03561 0.583783 1.57313 0.002825 0.843541</pose>
+          <velocity>-5e-05 2.9e-05 5.1e-05 -0.000237 -0.00012 -0.059426</velocity>
+          <acceleration>5.8e-05 0.000447 -7.5e-05 -0.000843 -6.7e-05 -0.074527</acceleration>
+          <wrench>1e-06 4e-06 -1e-06 0 -0 0</wrench>
+        </link>
+        <link name='Link_3'>
+          <pose>0.076914 3.88935 0.583268 2.27424 0.002825 0.843541</pose>
+          <velocity>-0.008741 -0.009737 0.000106 -0.111567 -0.125218 -0.058952</velocity>
+          <acceleration>-0.011403 -0.011266 6.6e-05 0.024609 0.043456 -0.074667</acceleration>
+          <wrench>-0.000114 -0.000113 1e-06 0 -0 0</wrench>
+        </link>
+        <link name='Link_4'>
+          <pose>0.17318 3.8046 0.471854 3.04351 0.863251 2.28318</pose>
+          <velocity>0.000215 -0.027843 0.021615 -0.111561 -0.125223 -0.058959</velocity>
+          <acceleration>-0.026322 -0.013826 -0.003053 0.023234 0.044685 -0.073101</acceleration>
+          <wrench>-0.000263 -0.000138 -3.1e-05 0 -0 0</wrench>
+        </link>
+        <link name='Link_5'>
+          <pose>0.205999 3.77636 0.437861 1.5769 0.867347 2.41767</pose>
+          <velocity>0.002807 -0.033571 0.028875 -0.108216 -0.12818 -0.053697</velocity>
+          <acceleration>-0.031141 -0.014768 -0.004206 0.095999 -0.019976 0.043425</acceleration>
+          <wrench>-0.000311 -0.000148 -4.2e-05 0 -0 0</wrench>
+        </link>
+        <link name='Pivot_Arm_Gripper_Idol'>
+          <pose>0.260169 3.84192 0.433712 0.776552 0.395067 1.20037</pose>
+          <velocity>0.00686 -0.036928 0.028723 -0.274378 0.021091 0.135787</velocity>
+          <acceleration>-0.034088 -0.012277 0.004043 0.059001 0.028083 0.029612</acceleration>
+          <wrench>-0.000341 -0.000123 4e-05 0 -0 0</wrench>
+        </link>
+        <link name='Pivot_Arm_Gripper_Servo'>
+          <pose>0.265016 3.83764 0.441339 0.774149 0.389139 1.19409</pose>
+          <velocity>0.005652 -0.036363 0.029807 -0.274378 0.021091 0.135787</velocity>
+          <acceleration>-0.034168 -0.012621 0.00351 0.059001 0.028083 0.029612</acceleration>
+          <wrench>-0.000342 -0.000126 3.5e-05 0 -0 0</wrench>
+        </link>
+        <link name='Tip_Gripper_Idol'>
+          <pose>0.233545 3.85562 0.399377 0.84989 -0.533428 0.314262</pose>
+          <velocity>0.008467 -0.041789 0.022762 -0.130837 -0.107859 -0.027901</velocity>
+          <acceleration>-0.035261 -0.012492 0.005183 0.073058 0.00265 0.061969</acceleration>
+          <wrench>-0.000353 -0.000125 5.2e-05 0 -0 0</wrench>
+        </link>
+        <link name='Tip_Gripper_Servo'>
+          <pose>0.28734 3.81744 0.470649 -2.37761 -0.362516 0.511357</pose>
+          <velocity>0.005433 -0.022738 0.02973 -0.13046 -0.108197 -0.02833</velocity>
+          <acceleration>-0.034034 -0.012097 -0.004558 0.073094 0.002583 0.062054</acceleration>
+          <wrench>-0.00034 -0.000121 -4.6e-05 0 -0 0</wrench>
+        </link>
+        <link name='base_footprint'>
+          <pose>-0.026291 4.04504 -0.001087 0 0.003664 0.153015</pose>
+          <velocity>2e-06 2.1e-05 5.5e-05 -2.2e-05 -8.7e-05 7.4e-05</velocity>
+          <acceleration>2e-06 4.7e-05 -9.9e-05 -0.00065 -0.000502 0.000371</acceleration>
+          <wrench>2.3e-05 0.000702 -0.001471 0 -0 0</wrench>
+        </link>
+        <link name='wheel_left_link'>
+          <pose>-0.04812 4.18738 0.031935 -1.29535 1.56771 0.428459</pose>
+          <velocity>-8e-06 1.7e-05 -2e-06 -0.000252 -0.000304 0.0001</velocity>
+          <acceleration>0.000318 -0.000697 1.7e-05 0.013927 0.010549 0.010925</acceleration>
+          <wrench>9e-06 -2e-05 0 0 -0 0</wrench>
+        </link>
+        <link name='wheel_right_link'>
+          <pose>-0.004223 3.90274 0.031929 -0.600845 1.56977 1.12297</pose>
+          <velocity>9e-06 2.4e-05 -1e-06 -6.1e-05 -2.5e-05 5.7e-05</velocity>
+          <acceleration>1.9e-05 5.8e-05 -0 -0.00025 -3e-06 0.000327</acceleration>
+          <wrench>1e-06 2e-06 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='side_table_3'>
@@ -7445,7 +7553,7 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-8.40658 -7.8269 13.3296 -0 0.945795 0.448262</pose>
+        <pose>7.71198 1.45478 12.403 0 0.529797 -2.96203</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -13013,6 +13121,1468 @@
         <kinematic>0</kinematic>
       </link>
       <pose>-2.21058 0.104091 0 0 -0 0</pose>
+    </model>
+    <model name='robutler'>
+      <link name='base_footprint'>
+        <inertial>
+          <pose>-0.004959 0 0.020683 0 -0 0</pose>
+          <mass>14.8631</mass>
+          <inertia>
+            <ixx>0.0527584</ixx>
+            <ixy>-4.75766e-05</ixy>
+            <ixz>0.0294821</ixz>
+            <iyy>0.0371884</iyy>
+            <iyz>-3.54223e-06</iyz>
+            <izz>0.0222054</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+          <pose>-0.064 0 0.057 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.266 0.266 0.094</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__camera_link_collision_1'>
+          <pose>0.078 0 1.023 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__caster_back_left_link_collision_2'>
+          <pose>-0.177 0.064001 0.005 -1.57 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.009 0.02</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>100</kd>
+                <max_vel>1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.1</mu>
+                <mu2>0.1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__caster_back_right_link_collision_3'>
+          <pose>-0.177 -0.063999 0.005 -1.57 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.009 0.02</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>100</kd>
+                <max_vel>1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.1</mu>
+                <mu2>0.1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__base_scan_collision_4'>
+          <pose>-0.049 0 0.1255 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.0315</length>
+              <radius>0.055</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__base_for_arm_collision_5'>
+          <pose>-0.064 0 0.152 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.04</length>
+              <radius>0.02</radius>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__cylinder_collision_6'>
+          <pose>-0.064 0 0.302 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.3</length>
+              <radius>0.07</radius>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+          <pose>-0.064 0 0.01 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/turtlebot3/turtlebot3_description/meshes/bases/waffle_pi_base.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/DarkGrey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_scan_visual_1'>
+          <pose>-0.064 0 0.132 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/turtlebot3/turtlebot3_description/meshes/sensors/lds.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/FlatBlack</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_for_arm_visual_2'>
+          <pose>-0.064 0 0.152 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.04</length>
+              <radius>0.02</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__cylinder_visual_3'>
+          <pose>-0.064 0 0.302 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.3</length>
+              <radius>0.07</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+        <sensor name='Pi Camera' type='camera'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <camera>
+            <horizontal_fov>1.0856</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.03</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>30.0</updateRate>
+            <cameraName>camera</cameraName>
+            <frameName>camera_rgb_optical_frame</frameName>
+            <imageTopicName>rgb/image_raw</imageTopicName>
+            <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+            <hackBaseline>0.07</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+            <robotNamespace>/</robotNamespace>
+          </plugin>
+          <pose>0.076 0 1.019 0 -0 0</pose>
+        </sensor>
+        <sensor name='imu' type='imu'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <pose>0 0 0.078 0 -0 0</pose>
+          <imu/>
+        </sensor>
+        <sensor name='lds_lfcd_sensor' type='ray'>
+          <visualize>0</visualize>
+          <update_rate>5</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>360</samples>
+                <resolution>1</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>6.28319</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.12</min>
+              <max>3.5</max>
+              <resolution>0.015</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='gazebo_ros_lds_lfcd_controller' filename='libgazebo_ros_laser.so'>
+            <topicName>scan</topicName>
+            <frameName>base_scan</frameName>
+            <robotNamespace>/</robotNamespace>
+          </plugin>
+          <pose>-0.064 0 0.132 0 -0 0</pose>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Joint_1' type='revolute'>
+        <pose relative_to='base_footprint'>-0.064 0 0.402 0 -0 0</pose>
+        <parent>base_footprint</parent>
+        <child>Link_1</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>1.91986</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Link_1'>
+        <pose relative_to='Joint_1'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Link_1_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_1_edited.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Link_1_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_1_edited.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Joint_2' type='revolute'>
+        <pose relative_to='Link_1'>0 0 0.18264 0 -0 0</pose>
+        <parent>Link_1</parent>
+        <child>Link_2</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>1.91986</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Link_2'>
+        <pose relative_to='Joint_2'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Link_2_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_2_edited.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Link_2_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_2_edited.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Joint_3' type='revolute'>
+        <pose relative_to='Link_2'>0 0 0.22 0 -0 0</pose>
+        <parent>Link_2</parent>
+        <child>Link_3</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>1.91986</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Link_3'>
+        <pose relative_to='Joint_3'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Link_3_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_3_edited.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Link_3_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_3_edited.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Joint_4' type='revolute'>
+        <pose relative_to='Link_3'>0.001 -0.002 0.16988 0 -0 0.087266</pose>
+        <parent>Link_3</parent>
+        <child>Link_4</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>1.91986</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Link_4'>
+        <pose relative_to='Joint_4'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Link_4_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_4_edited.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Link_4_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_4_edited.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Joint_5' type='revolute'>
+        <pose relative_to='Link_4'>-0.002 0.001 0.055 0 0 -0.087266</pose>
+        <parent>Link_4</parent>
+        <child>Link_5</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>1.91986</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Link_5'>
+        <pose relative_to='Joint_5'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Link_5_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_5_edited.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='Link_5_fixed_joint_lump__camera_link_arm_collision_1'>
+          <pose>0.005 0.011 0.013 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.03 0.027</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Link_5_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Link_5_edited.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='Pi Camera' type='camera'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <camera>
+            <horizontal_fov>1.0856</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.03</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>30.0</updateRate>
+            <cameraName>camera</cameraName>
+            <frameName>camera_rgb_optical_frame_arm</frameName>
+            <imageTopicName>rgb/image_raw_arm</imageTopicName>
+            <cameraInfoTopicName>rgb/camera_info_arm</cameraInfoTopicName>
+            <hackBaseline>0.07</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+            <robotNamespace>/</robotNamespace>
+          </plugin>
+          <pose>0 0 0.1 3.14159 -1.57079 1.57159</pose>
+        </sensor>
+        <sensor name='Pi Camera' type='camera'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <camera>
+            <horizontal_fov>1.0856</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.03</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>30.0</updateRate>
+            <cameraName>camera</cameraName>
+            <frameName>camera_rgb_optical_frame</frameName>
+            <imageTopicName>rgb/image_raw_arm</imageTopicName>
+            <cameraInfoTopicName>rgb/camera_info_arm</cameraInfoTopicName>
+            <hackBaseline>0.07</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+            <robotNamespace>/</robotNamespace>
+          </plugin>
+          <pose>0 0 0.1 3.14159 -1.57079 1.57159</pose>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Gripper_Idol_Gear_Joint' type='revolute'>
+        <pose relative_to='Link_5'>0.012 0 0.065 -3.14159 -0.040996 -3.14159</pose>
+        <parent>Link_5</parent>
+        <child>Gripper_Idol_Gear</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>0</upper>
+            <effort>100</effort>
+            <velocity>0.5</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Gripper_Idol_Gear'>
+        <pose relative_to='Gripper_Idol_Gear_Joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Gripper_Idol_Gear_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Gripper_Idol_Gear_col.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Gripper_Idol_Gear_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Gripper_Idol_Gear.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Tip_Gripper_Idol_Joint' type='revolute'>
+        <pose relative_to='Gripper_Idol_Gear'>-0.039906 -0.000125 -0.002747 -3.14159 0.5236 -3.14159</pose>
+        <parent>Gripper_Idol_Gear</parent>
+        <child>Tip_Gripper_Idol</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-3.14</lower>
+            <upper>3.14</upper>
+            <effort>100</effort>
+            <velocity>0.5</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Tip_Gripper_Idol'>
+        <pose relative_to='Tip_Gripper_Idol_Joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Tip_Gripper_Idol_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Tip_Gripper_Idol_col.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Tip_Gripper_Idol_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Tip_Gripper_Idol.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Gripper_Servo_Gear_Joint' type='revolute'>
+        <pose relative_to='Link_5'>-0.012 0 0.065 0 0.032705 0</pose>
+        <parent>Link_5</parent>
+        <child>Gripper_Servo_Gear</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>0.5</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Gripper_Servo_Gear'>
+        <pose relative_to='Gripper_Servo_Gear_Joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Gripper_Servo_Gear_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Gripper_Servo_Gear_col.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Gripper_Servo_Gear_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Gripper_Servo_Gear.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Tip_Gripper_Servo_Joint' type='revolute'>
+        <pose relative_to='Gripper_Servo_Gear'>-0.039906 -0.004 -0.002747 3.14159 -1.5569 0</pose>
+        <parent>Gripper_Servo_Gear</parent>
+        <child>Tip_Gripper_Servo</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.3</upper>
+            <effort>100</effort>
+            <velocity>0.5</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Tip_Gripper_Servo'>
+        <pose relative_to='Tip_Gripper_Servo_Joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Tip_Gripper_Servo_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Tip_Gripper_Servo_col.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Tip_Gripper_Servo_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Tip_Gripper_Servo.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Pivot_Arm_Gripper_Idol_Joint' type='revolute'>
+        <pose relative_to='Link_5'>0.005 0 0.085 0 -0 0</pose>
+        <parent>Link_5</parent>
+        <child>Pivot_Arm_Gripper_Idol</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>0.5</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Pivot_Arm_Gripper_Idol'>
+        <pose relative_to='Pivot_Arm_Gripper_Idol_Joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Pivot_Arm_Gripper_Idol_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Pivot_Arm_Gripper_Idol_col.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Pivot_Arm_Gripper_Idol_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Pivot_Arm_Gripper_Idol.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='Pivot_Arm_Gripper_Servo_Joint' type='revolute'>
+        <pose relative_to='Link_5'>-0.005 0 0.085 0 -0.008301 0</pose>
+        <parent>Link_5</parent>
+        <child>Pivot_Arm_Gripper_Servo</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>100</effort>
+            <velocity>0.5</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='Pivot_Arm_Gripper_Servo'>
+        <pose relative_to='Pivot_Arm_Gripper_Servo_Joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.03</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.03</iyy>
+            <iyz>0</iyz>
+            <izz>0.03</izz>
+          </inertia>
+        </inertial>
+        <collision name='Pivot_Arm_Gripper_Servo_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Pivot_Arm_Gripper_Servo_col.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Pivot_Arm_Gripper_Servo_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/moveo_urdf/meshes/Pivot_Arm_Gripper_Servo.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='wheel_left_joint' type='revolute'>
+        <pose relative_to='base_footprint'>0 0.144 0.033 -1.57 0 0</pose>
+        <parent>base_footprint</parent>
+        <child>wheel_left_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wheel_left_link'>
+        <pose relative_to='wheel_left_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.0284989</mass>
+          <inertia>
+            <ixx>1.11756e-05</ixx>
+            <ixy>-4.23698e-11</ixy>
+            <ixz>-5.93817e-09</ixz>
+            <iyy>1.11924e-05</iyy>
+            <iyz>-1.44001e-11</iyz>
+            <izz>2.07126e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='wheel_left_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.018</length>
+              <radius>0.033</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>500000</kp>
+                <kd>10</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.1</mu>
+                <mu2>0.1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='wheel_left_link_visual'>
+          <pose>0 0 0 1.57 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/turtlebot3/turtlebot3_description/meshes/wheels/left_tire.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Yellow</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='wheel_right_joint' type='revolute'>
+        <pose relative_to='base_footprint'>0 -0.144 0.033 -1.57 0 0</pose>
+        <parent>base_footprint</parent>
+        <child>wheel_right_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wheel_right_link'>
+        <pose relative_to='wheel_right_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.0284989</mass>
+          <inertia>
+            <ixx>1.11756e-05</ixx>
+            <ixy>-4.23698e-11</ixy>
+            <ixz>-5.93817e-09</ixz>
+            <iyy>1.11924e-05</iyy>
+            <iyz>-1.44001e-11</iyz>
+            <izz>2.07126e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='wheel_right_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.018</length>
+              <radius>0.033</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>500000</kp>
+                <kd>10</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.1</mu>
+                <mu2>0.1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='wheel_right_link_visual'>
+          <pose>0 0 0 1.57 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/mast/catkin_ws/src/robutler_psr_2022/turtlebot3/turtlebot3_description/meshes/wheels/right_tire.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Yellow</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='turtlebot3_waffle_pi_controller' filename='libgazebo_ros_diff_drive.so'>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <odometrySource>world</odometrySource>
+        <publishOdomTF>1</publishOdomTF>
+        <robotBaseFrame>base_footprint</robotBaseFrame>
+        <publishWheelTF>0</publishWheelTF>
+        <publishTf>1</publishTf>
+        <publishWheelJointState>1</publishWheelJointState>
+        <legacyMode>0</legacyMode>
+        <updateRate>30</updateRate>
+        <leftJoint>wheel_left_joint</leftJoint>
+        <rightJoint>wheel_right_joint</rightJoint>
+        <wheelSeparation>0.287</wheelSeparation>
+        <wheelDiameter>0.066</wheelDiameter>
+        <wheelAcceleration>10</wheelAcceleration>
+        <wheelTorque>10000000000</wheelTorque>
+        <rosDebugLevel>na</rosDebugLevel>
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+      <plugin name='imu_plugin' filename='libgazebo_ros_imu.so'>
+        <alwaysOn>1</alwaysOn>
+        <topicName>imu</topicName>
+        <serviceName>imu_service</serviceName>
+        <gaussianNoise>0.0</gaussianNoise>
+        <updateRate>0</updateRate>
+        <imu>
+          <noise>
+            <type>gaussian</type>
+            <rate>
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </rate>
+            <accel>
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </accel>
+          </noise>
+        </imu>
+        <robotNamespace>/</robotNamespace>
+        <bodyName>base_footprint</bodyName>
+        <frameName>base_footprint</frameName>
+        <xyzOffset>0 0 0.156</xyzOffset>
+        <rpyOffset>0 -0 0</rpyOffset>
+        <ignition::corrected_offsets>1</ignition::corrected_offsets>
+      </plugin>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>/moveo_urdf</robotNamespace>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        <legacyModeNS>1</legacyModeNS>
+      </plugin>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>/moveo_urdf</robotNamespace>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        <legacyModeNS>1</legacyModeNS>
+      </plugin>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>/moveo_urdf</robotNamespace>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        <legacyModeNS>1</legacyModeNS>
+      </plugin>
+      <static>0</static>
+      <plugin name='mimic_moveo_1' filename='libroboticsgroup_gazebo_mimic_joint_plugin.so'>
+        <joint>Gripper_Servo_Gear_Joint</joint>
+        <mimicJoint>Tip_Gripper_Servo_Joint</mimicJoint>
+        <multiplier>1.0</multiplier>
+        <offset>0.0</offset>
+        <hasPID/>
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+      <plugin name='mimic_moveo_2' filename='libroboticsgroup_gazebo_mimic_joint_plugin.so'>
+        <joint>Gripper_Idol_Gear_Joint</joint>
+        <mimicJoint>Tip_Gripper_Idol_Joint</mimicJoint>
+        <multiplier>-1.0</multiplier>
+        <offset>0.0</offset>
+        <hasPID/>
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+      <plugin name='mimic_moveo_3' filename='libroboticsgroup_gazebo_mimic_joint_plugin.so'>
+        <joint>Gripper_Servo_Gear_Joint</joint>
+        <mimicJoint>Pivot_Arm_Gripper_Servo_Joint</mimicJoint>
+        <multiplier>1.0</multiplier>
+        <offset>0.0</offset>
+        <hasPID/>
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+      <plugin name='mimic_moveo_4' filename='libroboticsgroup_gazebo_mimic_joint_plugin.so'>
+        <joint>Gripper_Idol_Gear_Joint</joint>
+        <mimicJoint>Pivot_Arm_Gripper_Idol_Joint</mimicJoint>
+        <multiplier>1.0</multiplier>
+        <offset>0.0</offset>
+        <hasPID/>
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+      <pose>-1.5 -4 0 0 -0 0</pose>
+    </model>
+    <model name='Suitcase2H'>
+      <static>1</static>
+      <link name='body'>
+        <pose>0 0 0 0 -0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/suitcase2h/1/files/meshes/Suitcase2H.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/suitcase2h/1/files/meshes/Suitcase2H_Col.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.964593 5.17353 0 0 -0 0</pose>
+    </model>
+    <model name='MaleVisitorSit'>
+      <static>1</static>
+      <link name='body'>
+        <pose>0 0 0 0 -0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://MaleVisitorSit/meshes/MaleVisitorSit.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://MaleVisitorSit/meshes/MaleVisitorSit_Col.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-3.53017 4.40424 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>

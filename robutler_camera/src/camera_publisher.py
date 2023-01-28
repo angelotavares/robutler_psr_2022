@@ -103,6 +103,7 @@ class ObjectDetection:
 
                 # Labels and confidences for the image
                 text = "{}: {:.4f}".format(self.classes[classIDs[i]], confidences[i])
+                print(text)
                 cv2.putText(
                     cv_image,
                     text,
