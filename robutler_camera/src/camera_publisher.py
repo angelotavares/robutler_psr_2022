@@ -5,12 +5,12 @@ import cv2
 import numpy as np
 
 
-classes = open("coco.names").read().strip().split("\n")
+classes = open("/home/mast/robutler_psr_2022/robutler_camera/src/coco.names").read().strip().split("\n")
 np.random.seed(42)
 colors = np.random.randint(0, 255, size=(len(classes), 3), dtype="uint8")
 
 # Give the configuration and weight files for the model and load the network.
-net = cv2.dnn.readNetFromDarknet("yolov3.cfg", "yolov3.weights")
+net = cv2.dnn.readNetFromDarknet("/home/mast/robutler_psr_2022/robutler_camera/src/yolov3.cfg", "/home/mast/robutler_psr_2022/robutler_camera/src/yolov3.weights")
 # self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 # self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
