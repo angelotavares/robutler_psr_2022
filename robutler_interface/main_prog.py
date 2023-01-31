@@ -21,7 +21,7 @@ class Robutler:
         self.object_detected = []
         
         
-
+    
 class camera_node(subscriber):
     """
     [extended_summary]
