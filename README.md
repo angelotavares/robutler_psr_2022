@@ -47,6 +47,7 @@ For the manipulator it will be use the moveit package. For the base it was used 
 To control the robot and send some basic commands we can use the created app using Tkinter. This interface can be seen bellow
 ![Alt text](images/app.jpeg)
 *App interface*
+
 ## How to run the system
 
 To lauch the gazebo simulation
