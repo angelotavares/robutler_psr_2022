@@ -24,7 +24,14 @@ For simulation it will be used Gazebo with a apartment like world comprise of a 
 
 The floor plant can be seen in the image bellow:
 
+![Alt text](images/floorplan.jpg)
+
+*Apartment plant*
+
 The gazebo simulation can be see here:
+![Alt text](images/Screenshot%20from%202023-02-02%2021-18-08.png)
+
+*Gazebo simulation*
 
 ### Mapping and Navigation
 
@@ -32,7 +39,7 @@ For the mapping and navigation it will be used the gmapping module and the move 
 
 ### Perception
 
-For the perception it will be use a set of two sensors. A laser scan for obstacle detection and mapping and a RGB camera for object recognition.
+For the perception it will be use a set of two sensors. A laser scan for obstacle detection and mapping and a RGB camera for object recognition.k
 
 The RGB camera feed is passed to a script that makes use of the yolo library for the object recognition. The yolo weights file is not present in the repository since is a very large fille, however it can be downloaded.
 
@@ -56,7 +63,7 @@ To lauch the gazebo simulation
 roslaunch robutler_bringup gazebo.launch
 ```
 
-To spawn the robot in the GAzebo world, and open the rviz
+To spawn the robot in the Gazebo world, and open the rviz
 
 ```bash
 roslaunch robutler_bringup bringup.launch
@@ -89,6 +96,30 @@ Once this command is run the Moveit planing interface can be use to manipulate t
 ![Alt text](images/Screenshot%20from%202023-01-28%2014-23-19.png)
 
 *Object recognition using YOLO*
+
+### Ambient mapping
+
+After running in a first instance the slam gmmaping the map bellow is obtained for the apartment
+
+[label](images/psr_apartment.pgm)
+
+*Map created*
+
+This map is accurate when compared with the original geometry of the apartment.
+
+### Trasnforms tree
+
+After all programs have been lauched the transformation tree should look something like the image bellow
+
+![Alt text](images/frames_page-0001.jpg)
+
+*Transformation tree*
+
+The communication between all the nodes can be seen here
+
+![Alt text](images/rosgraph.svg)
+
+*RQT graph view*
 
 ## Available missions
 

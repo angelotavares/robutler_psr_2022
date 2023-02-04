@@ -2170,20 +2170,10 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>6082 134000000</sim_time>
-      <real_time>125 407458579</real_time>
-      <wall_time>1675371938 202474326</wall_time>
-      <iterations>123203</iterations>
-      <model name='FemaleVisitor'>
-        <pose>-7.27599 3.71929 0 0 -0 1.29251</pose>
-        <scale>1 1 1</scale>
-        <link name='body'>
-          <pose>-7.27599 3.71929 0 0 -0 1.29251</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+      <sim_time>5761 135000000</sim_time>
+      <real_time>500 374683734</real_time>
+      <wall_time>1671060998 927161926</wall_time>
+      <iterations>486178</iterations>
       <model name='Fridge_Cabinet_33x15_clone_2_clone'>
         <pose>-1.65867 4.6274 -0.000205 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2287,23 +2277,13 @@
         </link>
       </model>
       <model name='KitchenSink'>
-        <pose>-2.90342 -0.069268 -0.001609 0 -1e-06 -1.57367</pose>
+        <pose>-2.90383 -0.037844 -0.00161 -1e-06 -2e-06 -1.57823</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.90342 -0.069268 -0.001609 0 -1e-06 -1.57367</pose>
+          <pose>-2.90383 -0.037844 -0.00161 -1e-06 -2e-06 -1.57823</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-3e-06 -0.000957 -0.036229 -0.594639 0.001709 0</acceleration>
-          <wrench>-3e-06 -0.000957 -0.036229 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='MaleVisitorSit'>
-        <pose>-3.62641 5.13668 0.049442 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='body'>
-          <pose>-3.62641 5.13668 0.049442 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='Shower'>
@@ -2316,24 +2296,14 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Suitcase2H'>
-        <pose>1.34615 5.29877 0 0 0 -2.37542</pose>
-        <scale>1 1 1</scale>
-        <link name='body'>
-          <pose>1.34615 5.29877 0 0 0 -2.37542</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='Toilet'>
-        <pose>1.74105 -0.70364 0.009891 0.002188 0.031713 -1.57073</pose>
+        <pose>1.74124 -0.670659 0.00954 0 0.031612 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>1.74105 -0.70364 0.009891 0.002188 0.031713 -1.57073</pose>
+          <pose>1.74124 -0.670659 0.00954 0 0.031612 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.000374 0.000189 1.8e-05 0.000107 0.001174 0.00131</acceleration>
-          <wrench>-0.000374 0.000189 1.8e-05 0 -0 0</wrench>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Wall_Cabinet_15x30'>
@@ -2555,10 +2525,10 @@
         </link>
       </model>
       <model name='aws_robomaker_residential_BalconyTable_01'>
-        <pose>-7.04371 -2.19117 -6e-06 4e-06 6e-06 0.106098</pose>
+        <pose>-6.89848 -2.18431 -9e-06 7e-06 -1e-06 -7e-06</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-7.04371 -2.19117 -6e-06 4e-06 6e-06 0.106098</pose>
+          <pose>-6.89848 -2.18431 -9e-06 7e-06 -1e-06 -7e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -147 0 -0 0</wrench>
@@ -2615,23 +2585,23 @@
         </link>
       </model>
       <model name='aws_robomaker_residential_SofaB_01'>
-        <pose>-3.57144 5.24159 0.001141 -0.004353 0.011811 -1.57093</pose>
+        <pose>-3.58956 5.22238 -0 0 0 -1.58221</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-3.57144 5.24159 0.001141 -0.004353 0.011811 -1.57093</pose>
+          <pose>-3.58956 5.22238 -0 0 0 -1.58221</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 -0 0 -0 0</acceleration>
-          <wrench>-0 1e-06 -1e-06 0 -0 0</wrench>
+          <acceleration>-0 -0 0.000169 0.012758 -0.013872 0</acceleration>
+          <wrench>-0 -0 0.012281 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_Sofa_01_0'>
-        <pose>-2.36851 -4.37358 -3.6e-05 0.000611 0.000168 1.5529</pose>
+        <pose>-2.36442 -4.35767 -1.5e-05 1.5e-05 -4.9e-05 1.55729</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.36851 -4.37358 -3.6e-05 0.000611 0.000168 1.5529</pose>
-          <velocity>1e-06 -8e-06 -0.007771 -0.023599 0.14051 -6.2e-05</velocity>
-          <acceleration>0.004822 -0.007963 -7.34286 -1.1753 1.56667 -0.121334</acceleration>
-          <wrench>0.349582 -0.577337 -532.358 0 -0 0</wrench>
+          <pose>-2.36442 -4.35767 -1.5e-05 1.5e-05 -4.9e-05 1.55729</pose>
+          <velocity>-0.000272 -5.3e-05 0.004932 -0.008217 0.017354 -0.002995</velocity>
+          <acceleration>-0.320412 -0.215704 14.0812 1.81865 -0.707811 2.91101</acceleration>
+          <wrench>-23.2299 -15.6386 1020.89 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_TV_02'>
@@ -2645,20 +2615,20 @@
         </link>
       </model>
       <model name='aws_robomaker_residential_Trash_01'>
-        <pose>0.688676 3.0982 0.000894 0 -1e-06 0</pose>
+        <pose>0.688676 3.0982 0.000904 1e-06 -2e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.688676 3.0982 0.000894 0 -1e-06 0</pose>
+          <pose>0.688676 3.0982 0.000904 1e-06 -2e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -0.98 0 -0 0</wrench>
+          <acceleration>-0.000723 -0.001721 -0.114437 1.90652 -0.802265 1e-06</acceleration>
+          <wrench>-7.2e-05 -0.000172 -0.011444 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_residential_Trash_01_0'>
-        <pose>-2.21058 0.104091 0.000894 0 -1e-06 0</pose>
+        <pose>-2.21058 0.104091 0.000903 0 -3e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.21058 0.104091 0.000894 0 -1e-06 0</pose>
+          <pose>-2.21058 0.104091 0.000903 0 -3e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -0.98 0 -0 0</wrench>
@@ -2791,11 +2761,11 @@
         </link>
       </model>
       <model name='camera'>
-        <pose>-0.046323 9.86546 -1.38716e+08 0 -0 0</pose>
+        <pose>-0.046323 9.86546 -1.22483e+08 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.046323 9.86546 -1.38716e+08 0 -0 0</pose>
-          <velocity>0 0 -52142.4 0 -0 0</velocity>
+          <pose>-0.046323 9.86546 -1.22483e+08 0 -0 0</pose>
+          <velocity>0 0 -48996.6 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -0.098 0 -0 0</wrench>
         </link>
@@ -3282,119 +3252,119 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='psr_apartment'>
-        <pose>-2.46745 -0.01035 0 0 -0 0</pose>
+      <model name='psr_appartment'>
+        <pose>-2.3527 0.022702 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='Wall_11'>
-          <pose>-2.77183 5.66993 0 0 -0 0</pose>
+          <pose>-2.65708 5.70298 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_13'>
-          <pose>-7.81742 3.90897 0 0 -0 1.5733</pose>
+          <pose>-7.70267 3.94202 0 0 -0 1.5733</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_15'>
-          <pose>-4.24017 3.84264 0 0 -0 1.57535</pose>
+          <pose>-4.12542 3.87569 0 0 -0 1.57535</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_17'>
-          <pose>-1.25165 3.89811 0 0 -0 1.5708</pose>
+          <pose>-1.1369 3.93116 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_19'>
-          <pose>0.02589 0.780313 0 0 0 -1.5708</pose>
+          <pose>0.140634 0.81337 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_2'>
-          <pose>-3.15996 -5.6849 0 0 0 -0.00169</pose>
+          <pose>-3.04521 -5.65185 0 0 0 -0.00169</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_21'>
-          <pose>1.46212 -0.217844 0 0 -0 3.14159</pose>
+          <pose>1.57687 -0.184787 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_24'>
-          <pose>-0.68935 -2.0755 0 0 -0 0</pose>
+          <pose>-0.574606 -2.04245 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_27'>
-          <pose>2.47767 -1.1505 0 0 -0 1.5708</pose>
+          <pose>2.59242 -1.11745 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_29'>
-          <pose>1.05599 -1.15636 0 0 0 -1.5636</pose>
+          <pose>1.17074 -1.12331 0 0 0 -1.5636</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_31'>
-          <pose>-1.16478 -0.560984 0 0 -0 1.5708</pose>
+          <pose>-1.05003 -0.527927 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_34'>
-          <pose>-3.91124 0.369222 0 0 -0 0</pose>
+          <pose>-3.79649 0.402279 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_36'>
-          <pose>-3.98935 -1.7755 0 0 -0 1.5708</pose>
+          <pose>-3.8746 -1.74245 0 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_39'>
-          <pose>-0.09097 -3.87995 0 0 0 -1.5708</pose>
+          <pose>0.023774 -3.8469 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_4'>
-          <pose>-6.65596 -1.75415 0 0 -0 1.57079</pose>
+          <pose>-6.54121 -1.7211 0 0 -0 1.57079</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_41'>
-          <pose>-7.206 -5.679 0 0 -0 3.14159</pose>
+          <pose>-7.09125 -5.64595 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_42'>
-          <pose>-7.7845 -1.7655 0 0 -0 1.57808</pose>
+          <pose>-7.66975 -1.73245 0 0 -0 1.57808</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_6'>
-          <pose>-2.7628 2.14788 0 0 0 -2.4e-05</pose>
+          <pose>-2.64806 2.18093 0 0 0 -2.4e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='Wall_9'>
-          <pose>1.75968 2.72972 0 0 0 -1.5708</pose>
+          <pose>1.87443 2.76277 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -7475,7 +7445,7 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-3.82799 2.8298 8.7737 0 1.4178 2.70506</pose>
+        <pose>-8.40658 -7.8269 13.3296 -0 0.945795 0.448262</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -13043,117 +13013,6 @@
         <kinematic>0</kinematic>
       </link>
       <pose>-2.21058 0.104091 0 0 -0 0</pose>
-    </model>
-    <model name='Suitcase2H'>
-      <static>1</static>
-      <link name='body'>
-        <pose>0 0 0 0 -0 0</pose>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/suitcase2h/1/files/meshes/Suitcase2H.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/suitcase2h/1/files/meshes/Suitcase2H_Col.obj</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>1.03725 5.21586 0 0 -0 0</pose>
-    </model>
-    <model name='MaleVisitorSit'>
-      <static>1</static>
-      <link name='body'>
-        <pose>0 0 0 0 -0 0</pose>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://MaleVisitorSit/meshes/MaleVisitorSit.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://MaleVisitorSit/meshes/MaleVisitorSit_Col.obj</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>-3.62641 4.72653 0 0 -0 0</pose>
-    </model>
-    <model name='FemaleVisitor'>
-      <static>1</static>
-      <link name='body'>
-        <pose>0 0 0 0 -0 0</pose>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://FemaleVisitor/meshes/FemaleVisitor.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://FemaleVisitor/meshes/FemaleVisitor_Col.obj</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>-7.27599 4.82705 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>

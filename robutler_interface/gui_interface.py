@@ -2,6 +2,9 @@ import tkinter
 import tkinter.messagebox
 import customtkinter
 from PIL import Image
+from geeteventbus.subscriber import subscriber
+from geeteventbus.eventbus import eventbus
+from geeteventbus.event import event
 
 customtkinter.set_appearance_mode(
     "System"
@@ -12,7 +15,9 @@ customtkinter.set_default_color_theme(
 
 
 class App(customtkinter.CTk):
-    def __init__(self):
+    def __init__(self, bus):
+
+        self.bus = bus
         super().__init__()
 
         # configure window
@@ -24,6 +29,10 @@ class App(customtkinter.CTk):
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
 
+        self.main_frame()
+        self.mainloop()
+
+    def main_frame(self):
         # create sidebar frame with widgets
 
         self.sidebar_frame = customtkinter.CTkFrame(self, width=140, corner_radius=0)
@@ -169,12 +178,9 @@ class App(customtkinter.CTk):
         print("sidebar_button click")
 
     def button_callback(self):
-        print(self.combobox_1.get() + " in " + self.optionmenu_1.get())
+        data = str(self.combobox_1.get() + " in " + self.optionmenu_1.get())
+
+        self.bus.post(event("gui", data))
 
     def move_callback(self, value):
         print(value)
-
-
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
