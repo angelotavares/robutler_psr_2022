@@ -91,8 +91,9 @@ class ObjectDetection:
                     color,
                     1,
                 )
-
-                # Convert the image back to a ROS message and publish it on the output topic
+        else:
+            self.bus.post(event("camera", ""))
+            # Convert the image back to a ROS message and publish it on the output topic
         try:
             self.image_pub.publish(self.bridge.cv2_to_imgmsg(cv_image, "bgr8"))
         except CvBridgeError as e:

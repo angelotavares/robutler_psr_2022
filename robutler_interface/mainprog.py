@@ -68,9 +68,20 @@ class MainProg:
             "Is Suitcase There",
             "Is the table clean",
         ]
+        if objective == actions[0]:
+            "Arrive at Location"
+        elif objective == actions[1] and (self.object_present == "sphere" or self.object_present == "ball") :
+            print("There is a sphere There")
+        elif objective == actions[2] and self.object_present == "person":
+            print("Persopn present")
 
-        if objective == actions[3] and self.object_present == "suitcase":
+        elif objective == actions[3] and self.object_present == "suitcase":
             print("Yes")
+        elif objective == actions[4] and self.object_present == "":
+            print("Tabler clean")
+        else:
+            print("No objective")
+        
 
     def brains(self, topic, data):
         if topic == "gui":
