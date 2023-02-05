@@ -1,6 +1,8 @@
 from gui_interface import App
 from goal_pub import MoveBase
 from camera_publisher import ObjectDetection
+from vel_pub import VelPub
+from speech_iteraction import TalkTO
 import threading
 import rospy
 from sensor_msgs.msg import Image
@@ -42,7 +44,8 @@ class MainProg:
         self.bus = eventbus()
         self.camera = ObjectDetection(self.bus, net, ln, colors, classes)
         self.goal = MoveBase(self.bus)
-
+        self.vel_pub = VelPub()
+        self.talk = TalkTO()
         self.gui_sub = gui_events_sub(self)
         self.bus.register_consumer(self.gui_sub, ("gui"))
 
@@ -53,11 +56,53 @@ class MainProg:
 
         self.gui = App(self.bus)
 
+        self.front_vel = 0.5
+        self.rotate_vel = 0.5
+        self.object_present = ""
+
+    def check_if_objective(self, objective):
+        actions = [
+            "Move",
+            "Look for sphere",
+            "Is there anyone",
+            "Is Suitcase There",
+            "Is the table clean",
+        ]
+
+        if objective == actions[3] and self.object_present == "suitcase":
+            print("Yes")
+
     def brains(self, topic, data):
         if topic == "gui":
             print("data", data)
-        else:
+
+            if data.split(":")[0] == "move":
+                if data.split(":")[1] == "Forward":
+                    print(type(self.front_vel))
+                    self.vel_pub.robutler_move(lx=self.front_vel)
+                elif data.split(":")[1] == "Backwards":
+                    self.vel_pub.robutler_move(lx=-self.front_vel)
+                elif data.split(":")[1] == "Rotate Left":
+                    self.vel_pub.robutler_move(az=self.rotate_vel)
+                elif data.split(":")[1] == "Rotate Right":
+                    self.vel_pub.robutler_move(az=-self.rotate_vel)
+                else:
+                    self.vel_pub.robutler_move()
+            elif data.split(":")[0] == "vel":
+                self.front_vel = float(data.split(":")[1])
+            elif data.split(":")[0] == "velh":
+                self.rotate_vel = float(data.split(":")[1])
+            elif data.split(":")[0] == "talking":
+                self.talk.talking_to()
+            else:
+                room = data.split(":")[1]
+                action = data.split(":")[0]
+                sucess = self.goal.movebase_client(room)
+                print(sucess)
+                self.check_if_objective(action)
+        elif topic == "camera":
             print(data)
+            self.object_present = data
 
 
 class gui_events_sub(subscriber):

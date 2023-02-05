@@ -14,8 +14,9 @@ class MoveBase:
         self.bus = bus
 
     def movebase_client(self, g):
+       
         cord = loc.locations[g]
-
+        print(cord)
         # Create an action client called "move_base" with action definition file "MoveBaseAction"
         client = actionlib.SimpleActionClient("move_base", MoveBaseAction)
 
@@ -33,6 +34,7 @@ class MoveBase:
         goal.target_pose.pose.orientation.w = cord["w"]
         goal.target_pose.pose.orientation.z = cord["wz"]
 
+        print(goal)
         # Sends the goal to the action server.
         client.send_goal(goal)
         # Waits for the server to finish performing the action.

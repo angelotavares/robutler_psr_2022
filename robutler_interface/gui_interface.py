@@ -87,7 +87,7 @@ class App(customtkinter.CTk):
         self.optionmenu_1 = customtkinter.CTkOptionMenu(
             self.tabview.tab("Action"),
             dynamic_resizing=False,
-            values=["Kitchen", "Big Room", "Office", "Small Room", "WC", "Living Room"],
+            values=["Kitchen", "main_room", "Office", "small_room", "Living_room"],
         )
         self.optionmenu_1.grid(row=0, column=0, padx=20, pady=(20, 10))
         self.combobox_1 = customtkinter.CTkComboBox(
@@ -134,9 +134,13 @@ class App(customtkinter.CTk):
             row=2, column=0, padx=(20, 10), pady=(10, 10), sticky="ew"
         )
         self.slider_1 = customtkinter.CTkSlider(
-            self.slider_progressbar_frame, from_=0, to=1, number_of_steps=4
+            self.slider_progressbar_frame,
+            from_=0,
+            to=1,
+            number_of_steps=5,
         )
         self.slider_1.grid(row=3, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
+
         self.slider_2 = customtkinter.CTkSlider(
             self.slider_progressbar_frame, orientation="vertical"
         )
@@ -153,7 +157,7 @@ class App(customtkinter.CTk):
         self.combobox_1.grid(row=1, column=0, padx=20, pady=(10, 10))
 
         self.seg_button_1.configure(
-            values=["Forward", "Backwards", "Rotate Left", "Rotate Right"]
+            values=["Forward", "Backwards", "Rotate Left", "Rotate Right", "Stop"]
         )
 
         # set default values
@@ -162,25 +166,37 @@ class App(customtkinter.CTk):
         self.scaling_optionemenu.set("100%")
         self.optionmenu_1.set("House Division")
         self.combobox_1.set("Robot Action")
-        self.slider_1.configure(command=self.progressbar_2.set)
-        self.slider_2.configure(command=self.progressbar_3.set)
+        self.slider_1.configure(command=self.print_slider1)
+        self.slider_2.configure(command=self.print_slider2)
+
         self.progressbar_1.configure(mode="indeterminnate")
         self.progressbar_1.start()
+
+    def print_slider1(self, value):
+        self.bus.post(event("gui", ("velh:" + str(value))))
+
+        self.progressbar_2.set(value)
+
+    def print_slider2(self, value):
+        self.bus.post(event("gui", ("vel:" + str(value))))
+        self.progressbar_3.set(value)
+
+    def print_progressbar(self):
+        print()
 
     def change_appearance_mode_event(self, new_appearance_mode: str):
         customtkinter.set_appearance_mode(new_appearance_mode)
 
     def change_scaling_event(self, new_scaling: str):
         new_scaling_float = int(new_scaling.replace("%", "")) / 100
-        customtkinter.set_widget_scaling(new_scaling_float)
 
     def talking_button_event(self):
-        print("sidebar_button click")
+        self.bus.post(event("gui", ("talking:0")))
 
     def button_callback(self):
-        data = str(self.combobox_1.get() + " in " + self.optionmenu_1.get())
+        data = str(self.combobox_1.get() + ":" + self.optionmenu_1.get())
 
         self.bus.post(event("gui", data))
 
     def move_callback(self, value):
-        print(value)
+        self.bus.post(event("gui", ("move:" + value)))
