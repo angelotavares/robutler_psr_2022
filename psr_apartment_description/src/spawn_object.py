@@ -22,7 +22,7 @@ placements.append({'pose':Pose(position=Point(x=-7.33, y=5.29, z=0.58), orientat
               'room':'large_bedroom', 'place': 'bedside_cabinet'})
 
 
-model_names = ['sphere_v']
+model_names = []
 
 # Add here several models. All should be added to the robutler_description package
 model_name = random.choice(model_names)

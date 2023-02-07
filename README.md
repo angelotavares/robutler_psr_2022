@@ -1,10 +1,10 @@
 # robutler_psr_2022
 
-This works was made in the ambit of the corse robotic systems programing. This will make use of ROS, and two well known robots, for the movement it will be used the turtelbot waffle pi. For manipulating the environment it wil be used the BCN3D MOVEO, a open sorce and 3D printable manipulator with 5 degrees of freedom.
+This works was made in the ambit of the corse robotic systems programing. This will make use of ROS, and two well known robots, for the movement it will be used the turtelbot waffle pi. For manipulating the environment it wil be used the BCN3D MOVEO, a open sorce and 3D printable manipulator with 5 degrees of freedom. A link with more information is available here: <https://www.bcn3d.com/bcn3d-moveo-the-future-of-learning-robotic-arm/>
 
 ## Project description
 
-The objective is to develop a robotic system that acts like a butler. To accomplish this the robot needs to be capable of preform a set o functionalities, such as>
+The objective is to develop a robotic system that acts like a butler. To accomplish this the robot needs to be capable of preform a set o functionalities, such as:
 
 1. Create a map of the enviroment in witch is inserted.
 2. Move automatically tro the environment without colliding with it.
@@ -20,7 +20,7 @@ In order to accomplish the objectives a set of ROS modules will need to be used.
 
 ### Simulation
 
-For simulation it will be used Gazebo with a apartment like world comprise of a set of rooms, and the appropriated furniture.
+For simulation it will be used Gazebo with a apartment Tip_Gripper_Idol_Jointklike world comprise of a set of rooms, and the appropriated furniture.
 
 The floor plant can be seen in the image bellow:
 
@@ -93,6 +93,28 @@ Once this command is run the Moveit planing interface can be use to manipulate t
 
 *Example of a robot pose manipulation*
 
+To launch the navigation stack is necessary to run the following command:
+
+```bash
+roslaunch robutler_navigation navigation.launch
+```
+
+After this the map will be available in Rviz, and the pose estimation and 2D goal can be used.
+
+To launch the main program, responsible for the camera node, teleop control and semantic tasks, is necessary to run the command:
+
+```python
+python3 mainprog.py
+```
+
+however this command needs to be run in a specific directory, we can travell to this directory using the command
+
+```bash
+ cd /catkin_ws/src/robutler_psr_2022/robutler_interface
+```
+
+This location will change based on the computer
+
 ![Alt text](images/Screenshot%20from%202023-01-28%2014-23-19.png)
 
 *Object recognition using YOLO*
@@ -100,8 +122,7 @@ Once this command is run the Moveit planing interface can be use to manipulate t
 ### Ambient mapping
 
 After running in a first instance the slam gmmaping the map bellow is obtained for the apartment
-
-[label](images/psr_apartment.pgm)
+![Alt text](images/Screenshot%20from%202023-02-07%2009-57-28.png)
 
 *Map created*
 
@@ -123,8 +144,15 @@ The communication between all the nodes can be seen here
 
 ## Available missions
 
+* Search for objects in a room
+* Check for people presence
+* Move to a division
+* Pick a object and travel with it
+
 ## Future work
 
-In a continuation of this work could be interesting to add a "voice" to our butler, this could be accomplish by making use of a text based artificial intelligence as well as text to speech algorithm.
+The main program should be launched using the roslaunch command, this will allow for a unchanged way to deploy the robot as well as the creation of a global launch file.
 
 Another improvement for the future could be to make use of the perception pipeline of the Moveit pkg, this would allow to add a depth sensor to the system and dynamically, from the point cloud data, add obstacles that would be use to improve the arm planning.
+
+The arm simulation has a problem in the displayed gripper. Because of this its impossible to grab objects in gazebo.

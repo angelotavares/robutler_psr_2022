@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /Image1
         - /Image2
       Splitter Ratio: 0.5
     Tree Height: 129
@@ -200,7 +201,7 @@ Visualization Manager:
       Visual Enabled: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /camera/rgb/image_raw
+      Image Topic: /camera/rgb/image_raw_arm
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -558,7 +559,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: ""
+        Planning Group: arm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -743,7 +744,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.144867897033691
+      Distance: 6.0297136306762695
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -751,17 +752,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -1.97775399684906
-        Y: -2.6304666996002197
-        Z: -1.6153180599212646
+        X: -0.030183807015419006
+        Y: 0.4282621443271637
+        Z: -1.3065539598464966
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.4697964191436768
+      Pitch: 0.6897969841957092
       Target Frame: <Fixed Frame>
-      Yaw: 4.718552112579346
+      Yaw: 4.688551425933838
     Saved: ~
 Window Geometry:
   Displays:
